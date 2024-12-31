@@ -1,4 +1,0 @@
-Symbol,Kernel,Alpha,n_restarts_optimizer,Optimizer,Validation MSE,Validation R²
-AAPL 230616C185000,1**2 * DotProduct(sigma_0=1) + RBF(length_scale=1) + WhiteKernel(noise_level=1e-06),0.012561043700013555,10,fmin_l_bfgs_b,0.0004992175844105952,0.7959779800314774
-AAPL 230721C195000,1**2 * DotProduct(sigma_0=1) + RBF(length_scale=1) + WhiteKernel(noise_level=1e-06),0.012561043700013555,10,fmin_l_bfgs_b,0.0010146238803356788,0.44255456847735086
-AAPL 230721C200000,1**2 * DotProduct(sigma_0=1) + RBF(length_scale=1) + WhiteKernel(noise_level=1e-06),0.012561043700013555,10,fmin_l_bfgs_b,0.0003883043458859868,0.3751516656415609
