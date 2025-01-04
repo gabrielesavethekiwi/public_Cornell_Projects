@@ -3,13 +3,13 @@
 ## **Meta-Comment**
 This project focused on applying Gaussian Process Regression (GPR) to improve option pricing by modeling the errors of the Black-Scholes (BS) model. The primary goal was to gain practical experience with GPR in a financial context. The BS model, commonly used for pricing options, often deviates from actual market prices due to its simplifying assumptions. By fitting the residuals (differences between market prices and BS predictions) using GPR, the objective was to capture patterns in the errors and enhance the accuracy of BS predictions.
 
-# European vs. American Options: What’s the Difference?
+### European vs. American Options: What’s the Difference?
 
 The Black-Scholes model was designed for European options, which can only be exercised at their expiration date. In contrast, the options analyzed in this project were American-style options, which can be exercised at any time before expiration. This flexibility introduces an important factor: dividends.
 
 Holders of American options often exercise them just before dividend dates to receive the dividend payout. This behavior creates a need for pricing models that account for early exercise and dividends—something the Cox model handles well, but the standard BS model does not.
 
-# The Discrepancy: Why Did It Happen?
+### The Discrepancy: Why Did It Happen?
 
 The implied volatilities provided by WRDS were likely derived using models that correctly account for dividends, such as the Cox model or a dividend-adjusted BS model. However, in this project, these implied volatilities were reused in a plain BS model, which ignores dividends. As a result, the BS model systematically underpriced options near dividend dates.
 
